@@ -10,6 +10,7 @@ const LanguageSwitcher: React.FC = () => {
     { code: 'fr', label: 'FR' },
     { code: 'de', label: 'DE' },
     { code: 'it', label: 'IT' },
+    { code: 'es', label: 'ES' },
   ];
 
   return (
