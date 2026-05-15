@@ -441,6 +441,25 @@ body {
   color: #888;
 }
 
+.feedback-link {
+  margin-top: 15px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+.feedback-link a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.feedback-link a:hover {
+  color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
 @media (max-width: 600px) {
   .hero h1 { font-size: 2rem; }
   .declaration-text { font-size: 1.15rem; }

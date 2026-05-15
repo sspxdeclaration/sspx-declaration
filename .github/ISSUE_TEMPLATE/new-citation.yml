@@ -1,0 +1,59 @@
+name: Submit a New Citation
+description: Suggest a new authoritative teaching or modern contradiction for the declaration.
+title: "[Citation]: "
+labels: ["enhancement", "citation"]
+body:
+  - type: dropdown
+    id: citation_type
+    attributes:
+      label: Type of Citation
+      description: Is this an authoritative (pre-Vatican II) teaching or a modern (post-Vatican II) contradiction?
+      options:
+        - Authoritative Catholic Teaching
+        - Modern Magisterium (Contradiction)
+    validations:
+      required: true
+  - type: input
+    id: paragraph_number
+    attributes:
+      label: Related Paragraph
+      description: Which paragraph number or text segment from the declaration does this relate to?
+      placeholder: e.g. Paragraph 4 or "He, the perfect Image..."
+    validations:
+      required: true
+  - type: input
+    id: document_title
+    attributes:
+      label: Document Title
+      description: The title of the document (e.g., Lumen Gentium, Quas Primas).
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author/Source
+      description: Who issued the document? (e.g., Pope Francis, Council of Trent).
+    validations:
+      required: true
+  - type: textarea
+    id: direct_citation
+    attributes:
+      label: Direct Citation
+      description: The exact quote from the document. Please include paragraph or section numbers.
+      placeholder: "§8: 'This Church... subsists in the Catholic Church...'"
+    validations:
+      required: true
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Explanation
+      description: Briefly explain how this citation supports or contradicts the declaration.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to Source
+      description: Provide a URL to the document if available (e.g., Vatican website).
+    validations:
+      required: false

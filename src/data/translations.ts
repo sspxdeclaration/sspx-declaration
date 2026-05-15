@@ -20,7 +20,8 @@ export const translations = {
     openInWallet: "Open in Wallet",
     copyAddress: "Copy Address",
     copied: "Copied!",
-    footer: "Issued on the Feast of the Ascension of Our Lord, 2026."
+    footer: "Issued on the Feast of the Ascension of Our Lord, 2026.",
+    submitFeedback: "Submit a citation or correction"
   },
   fr: {
     title: "Déclaration de la Foi Catholique",
@@ -43,7 +44,8 @@ export const translations = {
     openInWallet: "Ouvrir dans le portefeuille",
     copyAddress: "Copier l'adresse",
     copied: "Copié !",
-    footer: "Publié en la Fête de l'Ascension de Notre Seigneur, 2026."
+    footer: "Publié en la Fête de l'Ascension de Notre Seigneur, 2026.",
+    submitFeedback: "Soumettre une citation ou une correction"
   },
   de: {
     title: "Erklärung des katholischen Glaubens",
@@ -66,7 +68,8 @@ export const translations = {
     openInWallet: "In Wallet öffnen",
     copyAddress: "Adresse kopieren",
     copied: "Kopiert!",
-    footer: "Herausgegeben am Fest Christi Himmelfahrt, 2026."
+    footer: "Herausgegeben am Fest Christi Himmelfahrt, 2026.",
+    submitFeedback: "Ein Zitat oder eine Korrektur einreichen"
   },
   it: {
     title: "Dichiarazione della Fede Cattolica",
@@ -89,6 +92,7 @@ export const translations = {
     openInWallet: "Apri nel Wallet",
     copyAddress: "Copia Indirizzo",
     copied: "Copiato!",
-    footer: "Emessa nella Festa dell'Ascensione di Nostro Signore, 2026."
+    footer: "Emessa nella Festa dell'Ascensione di Nostro Signore, 2026.",
+    submitFeedback: "Invia una citazione o una correzione"
   }
 };

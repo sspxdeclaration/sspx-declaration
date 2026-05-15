@@ -1,0 +1,31 @@
+name: Report a Correction
+description: Report a typo, translation error, or incorrect citation on the website.
+title: "[Correction]: "
+labels: ["bug", "correction"]
+body:
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Type of Correction
+      options:
+        - Typo / Spelling Error
+        - Translation Error
+        - Incorrect Citation / Source
+        - Broken Link
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location of the Error
+      description: Where is the error? Provide the paragraph number, document name, or UI element.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the Issue
+      description: Please describe what is wrong. What does it currently say, and what should it say?
+    validations:
+      required: true

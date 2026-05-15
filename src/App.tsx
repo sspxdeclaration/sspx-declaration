@@ -37,6 +37,11 @@ function App() {
 
       <footer className="footer">
         <p>{t.footer}</p>
+        <div className="feedback-link">
+          <a href="https://github.com/sspxdeclaration/sspx-declaration/issues/new/choose" target="_blank" rel="noopener noreferrer">
+            {t.submitFeedback} ↗
+          </a>
+        </div>
       </footer>
     </div>
   )
