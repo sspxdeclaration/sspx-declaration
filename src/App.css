@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #c0392b; /* Red for contradiction */
+  --traditional-color: #2980b9; /* Blue for authentic */
+  --bg-color: #fdfcf8;
+  --text-color: #2c3e50;
+  --border-color: #e0e0e0;
+  --panel-bg: #f5f6f7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Crimson Pro', serif;
+  line-height: 1.6;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+}
+
+/* LANGUAGE SWITCHER */
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  color: #888;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.lang-btn:hover {
+  color: var(--primary-color);
+}
+
+.lang-btn.active {
+  color: var(--accent-color);
+}
+
+.lang-separator {
+  color: #ddd;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: 1px double var(--border-color);
+  padding-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.instruction {
+  margin-top: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.declaration-body {
+  margin-bottom: 60px;
+}
+
+.paragraph-container {
+  margin-bottom: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+/* MAIN TEXT STYLING */
+.declaration-text-wrapper {
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.declaration-text-wrapper:hover {
+  border-color: var(--border-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.declaration-text {
+  font-size: 1.35rem;
+  margin: 0;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+.expand-hint {
+  display: block;
+  margin-top: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.declaration-text-wrapper:hover .expand-hint {
+  color: var(--primary-color);
+}
+
+.paragraph-container.open .declaration-text-wrapper {
+  background-color: #fff;
+  border-color: var(--primary-color);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-bottom: none;
+}
+
+.paragraph-container.open .declaration-text {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* EXPANDABLE PANEL (CONTAINER) */
+.violation-panel {
+  background-color: var(--panel-bg);
+  padding: 0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border: 1px solid var(--primary-color);
+  border-top: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  animation: slideDown 0.3s ease-out;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* CONTRADICTION THEME (RED) */
+.contradictions-section {
+  padding: 20px 25px;
+  background-color: rgba(192, 57, 43, 0.03);
+  border-left: 5px solid var(--accent-color);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.contradiction-header {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-top: 0;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.contradiction-info {
+  background-color: rgba(192, 57, 43, 0.05);
+}
+
+.contradiction-citation-box {
+  border: 1px solid rgba(192, 57, 43, 0.2);
+  border-left: 4px solid var(--accent-color);
+  background-color: #fff;
+}
+
+.contradiction-label {
+  color: var(--accent-color);
+}
+
+.contradiction-link {
+  color: var(--accent-color);
+}
+
+.contradiction-link:hover {
+  border-bottom-color: var(--accent-color);
+}
+
+/* AUTHENTIC TEACHING THEME (BLUE) */
+.authentic-teaching-section {
+  padding: 20px 25px;
+  background-color: rgba(41, 128, 185, 0.03);
+  border-left: 5px solid var(--traditional-color);
+}
+
+.authentic-header {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  color: var(--traditional-color);
+  margin-top: 0;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.authentic-item h4 {
+  color: #1a1a1a;
+}
+
+.authentic-info {
+  background-color: rgba(41, 128, 185, 0.08);
+}
+
+.authentic-citation-box {
+  background-color: #fff;
+  border: 1px solid rgba(41, 128, 185, 0.2);
+  border-left: 4px solid var(--traditional-color);
+}
+
+.authentic-label {
+  color: var(--traditional-color);
+}
+
+.authentic-blockquote {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* SHARED PANEL STYLES */
+.violation-item {
+  margin-bottom: 25px;
+}
+
+.violation-item:last-child {
+  margin-bottom: 0;
+}
+
+.violation-item h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding-bottom: 5px;
+}
+
+.author-doc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 15px;
+  padding: 10px 14px;
+  border-radius: 4px;
+}
+
+.violation-author, .violation-doc {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.violation-author strong, .violation-doc strong {
+  color: #1a1a1a;
+}
+
+.violation-explanation {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.citation-box {
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.citation-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.violation-citation {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  line-height: 1.5;
+  font-family: 'Crimson Pro', serif;
+}
+
+.source-link-wrapper {
+  margin-top: 10px;
+}
+
+.source-link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+/* DONATION WIDGET */
+.donation-widget {
+  margin: 60px 0 20px 0;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.donation-widget h4 {
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.donation-widget p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.btc-qr-container {
+  margin-bottom: 20px;
+}
+
+.btc-qr {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.btc-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.action-button {
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.wallet-button {
+  background-color: #e67e22; /* Bitcoin Orange */
+  color: white;
+}
+
+.wallet-button:hover {
+  background-color: #d35400;
+}
+
+.copy-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.copy-button:hover {
+  background-color: #34495e;
+}
+
+.copy-button.copied {
+  background-color: #27ae60; /* Green success */
+}
+
+.btc-address-container {
+  display: inline-block;
+  background-color: #f9f9f9;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.btc-address {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #555;
+  word-break: break-all;
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  padding-top: 40px;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2rem; }
+  .declaration-text { font-size: 1.15rem; }
+  .contradictions-section, .authentic-teaching-section { padding: 15px; }
+}
