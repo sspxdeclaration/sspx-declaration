@@ -5,11 +5,11 @@ export const esData: DeclarationParagraph[] = [
     id: 1,
     text: "En el Nombre de Nuestro Señor Jesucristo, Sabiduría divina, Verbo Encarnado, Quien quiso una sola religión,",
     authenticTeaching: {
-      title: "La Unicidad de la Verdadera Religión",
-      document: "Mortalium Animos (Encíclica sobre la unidad religiosa)",
-      author: "Papa Pío XI",
-      year: "1928",
-      citation: "§6: '¿Sufriremos Nos, lo que sería ciertamente inicuo, que la verdad, y una verdad divinamente revelada, se haga objeto de compromiso? Porque aquí se trata de defender la verdad revelada. Jesucristo envió a Sus Apóstoles a todo el mundo para que imbuyesen de la fe del Evangelio a todas las naciones...'"
+      title: "Condena del Indiferentismo",
+      document: "Syllabus de Errores",
+      author: "Papa Pío IX",
+      year: "1864",
+      citation: "Proposición Condenada §16: 'Cualquier hombre es libre de abrazar y profesar aquella religión que, guiado por la luz de la razón, juzgare por verdadera, y en ella puede hallar el camino de la eterna salvación y llegar a ella.' (Véase también Mortalium Animos: 'Jesucristo envió a Sus Apóstoles... para que imbuyesen de la fe del Evangelio a todas las naciones.')"
     },
     violations: [
       {
@@ -412,11 +412,11 @@ export const esData: DeclarationParagraph[] = [
     id: 20,
     text: "«El Espíritu Santo no fue prometido a los sucesores de Pedro para que dieran a conocer, por revelación suya, una nueva doctrina, sino para que, con su asistencia, guardaran santamente y expusieran fielmente la revelación transmitida por los Apóstoles, es decir, el Depósito de la Fe».",
     authenticTeaching: {
-      title: "Los Límites de la Infalibilidad Papal",
-      document: "Pastor Aeternus (Constitución Dogmática)",
+      title: "La Fe Indefectible de la Sede de Pedro",
+      document: "Pastor Aeternus (Constitución Dogmática sobre la Iglesia de Cristo)",
       author: "Concilio Vaticano I",
       year: "1870",
-      citation: "Capítulo 4, §6: 'Pues el Espíritu Santo no fue prometido a los sucesores de Pedro para que manifestaran una nueva doctrina por revelación suya, sino para que, con su asistencia, custodiaran santamente y expusieran fielmente la revelación transmitida por los apóstoles, es decir, el depósito de la fe.'"
+      citation: "Capítulo 4: 'Esta Sede de San Pedro permanece siempre libre de todo error, según la divina promesa de nuestro Señor el Salvador hecha al príncipe de sus discípulos: \"He rogado por ti, para que tu fe no falte...\" Pues el Espíritu Santo no fue prometido a los sucesores de Pedro para que manifestaran una nueva doctrina por revelación suya, sino para que, con su asistencia, custodiaran santamente y expusieran fielmente la revelación transmitida por los apóstoles, es decir, el depósito de la fe.'"
     },
     violations: [
       {

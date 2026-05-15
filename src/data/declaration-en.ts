@@ -5,11 +5,11 @@ export const enData: DeclarationParagraph[] = [
     id: 1,
     text: "In the Name of Our Lord Jesus Christ, divine Wisdom, the Word Incarnate, Who willed one sole religion,",
     authenticTeaching: {
-      title: "The Uniqueness of the True Religion",
-      document: "Mortalium Animos (Encyclical on Religious Unity)",
-      author: "Pope Pius XI",
-      year: "1928",
-      citation: "§6: 'Shall We suffer, what would indeed be iniquitous, the truth, and a truth divinely revealed, to be made a subject for compromise? For here there is question of defending revealed truth. Jesus Christ sent His Apostles into the whole world in order that they might permeate all nations with the Gospel faith...'"
+      title: "Condemnation of Indifferentism",
+      document: "Syllabus of Errors",
+      author: "Pope Pius IX",
+      year: "1864",
+      citation: "Condemned Proposition §16: 'Man may, in the observance of any religion whatever, find the way of eternal salvation, and arrive at eternal salvation.' (See also Mortalium Animos: 'Jesus Christ sent His Apostles... in order that they might permeate all nations with the Gospel faith.')"
     },
     violations: [
       {
@@ -412,11 +412,11 @@ export const enData: DeclarationParagraph[] = [
     id: 20,
     text: "“The Holy Ghost was not promised to the successors of Peter that they might make known, by His revelation, a new doctrine, but that, by His assistance, they might inviolably keep and faithfully expound the revelation transmitted by the Apostles, that is, the Deposit of the Faith.”",
     authenticTeaching: {
-      title: "The Limits of Papal Infallibility",
+      title: "The Unfailing Faith of the See of Peter",
       document: "Pastor Aeternus (Dogmatic Constitution on the Church of Christ)",
       author: "First Vatican Council",
       year: "1870",
-      citation: "Chapter 4, §6: 'For the Holy Spirit was promised to the successors of Peter not so that they might, by his revelation, make known some new doctrine, but that, by his assistance, they might religiously guard and faithfully expound the revelation or deposit of faith transmitted by the apostles.'"
+      citation: "Chapter 4: 'This See of St. Peter always remains unimpaired by any error, according to the divine promise of our Lord the Savior made to the chief of His disciples: \"I have prayed for thee, that thy faith fail not...\" For the Holy Spirit was promised to the successors of Peter not so that they might, by His revelation, make known some new doctrine, but that, by His assistance, they might religiously guard and faithfully expound the revelation or deposit of faith transmitted by the apostles.'"
     },
     violations: [
       {
