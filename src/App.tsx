@@ -20,6 +20,7 @@ function App() {
       <LanguageSwitcher />
       
       <header className="hero">
+        <h2 className="seo-hidden">SSPX Consecrations and SSPX Declaration of Faith</h2>
         <h1>{t.title}</h1>
         <p className="subtitle">{t.subtitle}</p>
         <p className="meta">{t.author}</p>

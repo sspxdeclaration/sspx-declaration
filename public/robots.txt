@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sspx-declaration.netlify.app/sitemap.xml
